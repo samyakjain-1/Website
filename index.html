@@ -44,6 +44,16 @@
             text-align: center;
         }
 
+        #home video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Send video to the background */
+        }
+
         #about {
             background-color: #eaeaea;
         }
@@ -111,6 +121,10 @@
 
     <!-- Home Section -->
     <section id="home">
+        <video autoplay muted loop>
+            <source src="background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <h1>Welcome to My Personal Website</h1>
         <p>Hello! I'm excited to have you here. Explore the sections to learn more about me.</p>
     </section>
