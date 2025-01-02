@@ -115,7 +115,7 @@ nav ul li a:hover::after {
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #f5f5dc
+    color: #f5f5dc;
 }
 .about-text{
     font-family:'Courier New', Courier, monospace;
