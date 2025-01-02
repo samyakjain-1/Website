@@ -15,7 +15,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/2555edefcc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -47,23 +48,24 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me<br></h1>
                     <p class="about-text">
-                        I am Samyak Jain, a <script>
+                        I am Samyak Jain, a
+                        <script>
                             var dob = new Date("07/25/2005");
                             //calculate month difference from current date in time
                             var month_diff = Date.now() - dob.getTime();
-    
+
                             //convert the calculated difference in date format
                             var age_dt = new Date(month_diff);
-    
+
                             //extract year from date
                             var year = age_dt.getUTCFullYear();
-    
+
                             //now calculate the age of the user
                             var age = Math.abs(year - 1970);
-    
+
                             //display the calculated age
                             document.write(age);
-    
+
                         </script> year old aspring software engineer with a knack for solving problems and building
                         efficient systems. I am currently a sophomore studying Computer Science at University of
                         Wisconsin-Madison.<br><br>
@@ -88,6 +90,98 @@
             </div>
         </div>
     </div>
+    <!--------skills----------->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title2">My Skills</h1>
+            <div class="skill-row">
+                <div class="box">
+                    <i class="devi devicon-python-plain"></i>
+                    <p class="skill-text">Python</p>
+                </div>
+                <div class="box">
+                    <i class="devi devicon-java-plain"></i>
+                    <p class="skill-text">Java</p>
+                </div>
+                <div class="box">
+                    <i class="devi devicon-html5-plain"></i>
+                    <p class="skill-text">HTML</p>
+                </div>
+                <div class="box">
+                    <i class="devi devicon-css3-plain"></i>
+                    <p class="skill-text">CSS</p>
+                </div>
+                <div class="box">
+                    <i class="devi devicon-javascript-plain"></i>
+                    <p class="skill-text">JavaScript</p>
+                </div>
+                <div class="box">
+                    <i class="devi devicon-git-plain"></i>
+                    <p class="skill-text">Git</p>
+                </div>
+                <div class="box">
+                    <i class="devi devicon-bash-plain"></i>
+                    <p class="skill-text">Bash</p>
+                </div>
+
+                <div class="box">
+                    <i class="devi devicon-visualstudio-plain"></i>
+                    <p class="skill-text">VSCode</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------projects-------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title2">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project1.jpg">
+                    <div class="layer">
+                        <h3 class=>Campus Navigation WebApp</h3>
+                        <p class=>This WebApp calculates shortest paths and closest destinations in a campus</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project2.jpg">
+                    <div class="layer">
+                        <h3 class=>Personal Website</h3>
+                        <p class=>My personal website that showcases my information, personal projects, and interests.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:samyakjain2575@gmail.com"> samyakjain2575@gmail.com</a></p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/samyak1"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/samyakjain-1"><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
