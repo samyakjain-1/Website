@@ -145,7 +145,8 @@
                     <div class="layer">
                         <h3 class=>Campus Navigation WebApp</h3>
                         <p class=>This WebApp calculates shortest paths and closest destinations in a campus</p>
-                        <a href="https://github.com/samyakjain-1/Campus-Navigation"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/samyakjain-1/Campus-Navigation"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -177,17 +178,42 @@
 
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Send Message</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
         <div class="footer">
             <p>Made by Samyak Jain | &copy; 2024</p>
+
+
+
+
+
+
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbx_E-56qUBSXtSahRqoSTcA_UwCiSGZtdPIGx7YSzaqbCZpPB2jGmZgI04V9xatK0GQPA/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const msg = document.getElementById("msg")
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                        msg.innerHTML = "Message sent successfully!"
+                        setTimeout(function(){
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                })
+                        .catch(error => console.error('Error!', error.message))
+                })
+            </script>
 </body>
 
 </html>
