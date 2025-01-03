@@ -119,6 +119,7 @@ nav ul li a:hover::after {
 }
 .header-text h1 span {
     font-family: "Roboto Serif", serif;
+    color: #62864d;
 }
 /* About Section */
 #about {
