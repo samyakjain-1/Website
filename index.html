@@ -17,6 +17,11 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/2555edefcc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -29,11 +34,11 @@
             <nav>
                 <img src="images/logo.png" class="logo">
                 <ul>
-                    <li class ="nav"><a href="#header">Home</a></li>
-                    <li class ="nav"><a href="#about">About</a></li>
-                    <li class ="nav"><a href="#skills">Skills</a></li>
-                    <li class ="nav"><a href="#projects">Projects</a></li>
-                    <li class ="nav"><a href="#contact">Contact</a></li>
+                    <li class="nav"><a href="#header">Home</a></li>
+                    <li class="nav"><a href="#about">About</a></li>
+                    <li class="nav"><a href="#skills">Skills</a></li>
+                    <li class="nav"><a href="#projects">Projects</a></li>
+                    <li class="nav"><a href="#contact">Contact</a></li>
                     <!-------<i class="fa-solid fa-xmark"></i>--->
                 </ul>
                 <!-----<i class="fa-solid fa-bars"></i>----->
@@ -159,7 +164,8 @@
                         <h3 class=>Personal Website</h3>
                         <p class=>My personal website that showcases my information, personal projects, and interests.
                         </p>
-                        <a href="https://github.com/samyakjain-1/Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/samyakjain-1/Website"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -209,12 +215,12 @@
                     e.preventDefault()
                     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                         .then(response => {
-                        msg.innerHTML = "Message sent successfully!"
-                        setTimeout(function(){
-                            msg.innerHTML = ""
-                        }, 5000)
-                        form.reset()
-                })
+                            msg.innerHTML = "Message sent successfully!"
+                            setTimeout(function () {
+                                msg.innerHTML = ""
+                            }, 5000)
+                            form.reset()
+                        })
                         .catch(error => console.error('Error!', error.message))
                 })
             </script>
