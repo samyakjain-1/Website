@@ -40,11 +40,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/background2.jpg);
+    background-image: url(../images/background6.jpg);
     background-size: cover;
     background-position: center;
     z-index: -3;
-    filter:blur(5px);
+    filter:blur(12px);
     background-attachment: fixed;
 }
 .container {
@@ -83,6 +83,7 @@ nav ul li a {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.0); /* Black shadow for better contrast */
     transition: color 0.5s;
     z-index: 1000;
+    font-weight: 999;
 }
 
 nav ul li a::after {
@@ -108,12 +109,13 @@ nav ul li a:hover::after {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
-    color: #000000;
+    color: #f5f5dc;
     font-size: 30px;
+    text-shadow: rgba(0, 0, 0, 0.6);
 }
 
 .header-text h1 {
-    font-size: 55px;
+    font-size: 70px;
     margin-top: 300px;
     text-align: center;
     font-weight:bold;
@@ -121,6 +123,7 @@ nav ul li a:hover::after {
 .header-text h1 span {
     font-family: "Roboto Serif", serif;
     color: #62864d;
+    text-shadow: #000000;
 }
 /* About Section */
 #about {
