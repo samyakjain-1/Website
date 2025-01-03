@@ -40,10 +40,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /*background-image: url(../images/background.jpg);*/
+    background-image: url(../images/background2.jpg);
     background-size: cover;
     background-position: center;
     z-index: -3;
+    filter:blur(5px);
     background-attachment: fixed;
 }
 .container {
@@ -113,9 +114,9 @@ nav ul li a:hover::after {
 
 .header-text h1 {
     font-size: 55px;
-    margin-top: 380px;
-    margin-right: 370px;
+    margin-top: 300px;
     text-align: center;
+    font-weight:bold;
 }
 .header-text h1 span {
     font-family: "Roboto Serif", serif;
