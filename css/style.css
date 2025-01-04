@@ -40,18 +40,16 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/background6.jpg);
+    background-image: url(../images/background6.png);
     background-size: cover;
     background-position: center;
     z-index: -3;
-    filter:blur(12px);
     background-attachment: fixed;
 }
 .container {
     padding: 10px 10%;
 
 }
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -72,6 +70,7 @@ nav ul li {
     list-style: none;
     margin: 10px 20px;
     position: relative;
+    background-attachment: fixed;
 }
 
 nav ul li a {
@@ -119,11 +118,21 @@ nav ul li a:hover::after {
     margin-top: 300px;
     text-align: center;
     font-weight:bold;
+    transition: 0.5s;
+}
+.header-text h1:hover{
+    -webkit-text-stroke: 2px #f5f5dc;
+    color: transparent;
 }
 .header-text h1 span {
     font-family: "Roboto Serif", serif;
     color: #62864d;
     text-shadow: #000000;
+    transition: 0.5s;
+}
+.header-text h1 span:hover{
+    -webkit-text-stroke: 2px #62864d;
+    color: transparent;
 }
 /* About Section */
 #about {
