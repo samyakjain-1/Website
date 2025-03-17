@@ -19,31 +19,35 @@
     <script src="https://kit.fontawesome.com/2555edefcc.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap "rel="stylesheet">
-    
-        <script>
-            window.onload = function () {
-              const menuToggle = document.getElementById("menu-toggle");
-              const menuClose = document.getElementById("menu-close");
-              const navMenu = document.getElementById("nav-menu");
-        
-              if(menuToggle && navMenu && menuClose){
-                  menuToggle.addEventListener("click", () => {
-                      navMenu.style.right = "0";
-                  });
-        
-                  menuClose.addEventListener("click", () => {
-                      navMenu.style.right = "-250px";
-                  });
-              } else {
-                  console.error("Navigation elements not found!");
-              }
-            };
-          </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap "
+        rel="stylesheet">
+
+    <script>
+        window.onload = function () {
+            const menuToggle = document.getElementById("menu-toggle");
+            const menuClose = document.getElementById("menu-close");
+            const navMenu = document.getElementById("nav-menu");
+
+            if (menuToggle && navMenu && menuClose) {
+                menuToggle.addEventListener("click", () => {
+                    navMenu.style.right = "0";
+                });
+
+                menuClose.addEventListener("click", () => {
+                    navMenu.style.right = "-250px";
+                });
+            } else {
+                console.error("Navigation elements not found!");
+            }
+        };
+    </script>
 </head>
 
 <body>
@@ -62,9 +66,9 @@
                     <li class="nav"><a href="#skills">Skills</a></li>
                     <li class="nav"><a href="#projects">Projects</a></li>
                     <li class="nav"><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" id="menu-close"></i>    
+                    <i class="fas fa-times" id="menu-close"></i>
                 </ul>
-                
+
             </nav>
 
             <div class="header-text">
@@ -126,46 +130,46 @@
                         Structures and Algorithms. These skills have enabled me to approach complex problems with
                         confidence and creativity.
                     </p>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!--------skills----------->
     <div id="skills">
         <div class="container">
             <h1 class="sub-title2">Skills</h1>
             <div class="skill-row">
-                <div class="box"data-aos="zoom-in">
+                <div class="box" data-aos="zoom-in">
                     <i class="devi devicon-python-plain"></i>
                     <p class="skill-text">Python</p>
                 </div>
-                <div class="box"data-aos="zoom-in">
+                <div class="box" data-aos="zoom-in">
                     <i class="devi devicon-java-plain"></i>
                     <p class="skill-text">Java</p>
                 </div>
-                <div class="box"data-aos="zoom-in">
+                <div class="box" data-aos="zoom-in">
                     <i class="devi devicon-html5-plain"></i>
                     <p class="skill-text">HTML</p>
                 </div>
-                <div class="box"data-aos="zoom-in">
+                <div class="box" data-aos="zoom-in">
                     <i class="devi devicon-css3-plain"></i>
                     <p class="skill-text">CSS</p>
                 </div>
-                <div class="box"data-aos="zoom-in">
+                <div class="box" data-aos="zoom-in">
                     <i class="devi devicon-javascript-plain"></i>
                     <p class="skill-text">JavaScript</p>
                 </div>
-                <div class="box"data-aos="zoom-in">
+                <div class="box" data-aos="zoom-in">
                     <i class="devi devicon-git-plain"></i>
                     <p class="skill-text">Git</p>
                 </div>
-                <div class="box"data-aos="zoom-in">
+                <div class="box" data-aos="zoom-in">
                     <i class="devi devicon-bash-plain"></i>
                     <p class="skill-text">Bash</p>
                 </div>
 
-                <div class="box"data-aos="zoom-in">
+                <div class="box" data-aos="zoom-in">
                     <i class="devi devicon-visualstudio-plain"></i>
                     <p class="skill-text">VSCode</p>
                 </div>
@@ -180,11 +184,13 @@
             <h1 class="sub-title2">Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/project1.jpg">
+                    <img src="images/mentalHealth.png">
                     <div class="layer">
-                        <h3 class=>Campus Navigation WebApp</h3>
-                        <p class=>This WebApp calculates shortest paths and closest destinations in a campus</p>
-                        <a href="https://github.com/samyakjain-1/Campus-Navigation" target="_blank"><i
+                        <h3 class=>Mental Health Chatbot</h3>
+                        <p class=> is designed to assist users with mental health concerns.
+                            It provides a platform where individuals can discuss their issues and receive support,
+                            aiming to promote mental well-being.​</p>
+                        <a href="https://samyakjain-1.github.io/chatbot" target="_blank"><i
                                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -256,17 +262,17 @@
             </script>
         </div>
     </div>
-    
+
     <script>
         // Add this after typing animation ends
         setTimeout(() => {
-          document.querySelector(".header-text h1").classList.add("typing-complete");
+            document.querySelector(".header-text h1").classList.add("typing-complete");
         }, 3000); // Match your typing duration (2.5s + blink time)
-      </script>
-      <script>
+    </script>
+    <script>
         AOS.init();
-      </script>
-      
+    </script>
+
 </body>
 
 </html>
