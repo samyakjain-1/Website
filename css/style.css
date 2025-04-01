@@ -56,10 +56,10 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    position: fixed; /* Add this line */
-    top: 0; /* Add this line */
-    left: 0; /* Add this line */
-    width: 100%; /* Add this line */
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
     padding: 10px 20px;
     border-radius: 10px;
     z-index: 1000;
@@ -84,7 +84,7 @@ nav ul li a {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
     position: relative;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.0); /* Black shadow for better contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.0); 
     transition: color 0.5s;
     z-index: 1000;
     font-weight: 999;
@@ -180,7 +180,6 @@ nav ul li a:hover::after {
 /* Skills Section */
 #skills {
     background: #000;
-    /* Dark gray */
     padding: 30px 0;
 }
 
@@ -208,9 +207,7 @@ nav ul li a:hover::after {
 .skill-row {
     display: flex;
     flex-wrap: wrap;
-    /* Allows items to wrap into multiple rows */
     justify-content: center;
-    /* Centers the icons horizontally */
     padding: 20px 0;
     position: relative;
     gap: 20px;
@@ -219,25 +216,20 @@ nav ul li a:hover::after {
 .box {
     text-align: center;
     flex: 1 1 calc(25% - 40px);
-    /* Ensures 4 items per row, with space between */
     max-width: 200px;
-    /* Limits the size of each box */
 }
 
 .box i {
     font-size: 80px;
-    /* Larger icon size */
     color: #fff;
-    /* Light color for icons */
     margin-bottom: 10px;
-    /* Space between icon and label */
 }
 
 .box p {
     font-size: 18px;
-    /* Slightly larger text */
+    
     color: #fff;
-    /* Matches the icon color */
+  
 }
 
 .sub-title2 {
@@ -434,7 +426,7 @@ nav .fas{
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        margin-top: 0 !important; /* Override desktop spacing */
+        margin-top: 0 !important; 
         width: 100%;
     }
 
@@ -459,7 +451,7 @@ nav .fas{
         right: -250px;
         width: 250px;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.85); /* dark glassy background */
+        background: rgba(0, 0, 0, 0.85); 
         backdrop-filter: blur(10px);
         padding-top: 60px;
         z-index: 1100;
@@ -503,7 +495,6 @@ nav .fas{
         display: block;
     }
 
-    /* GENERIC CONTAINER AND ROW */
     .container {
         display: flex;
         flex-direction: column;
@@ -623,7 +614,7 @@ nav .fas{
         50% { border-color: #fff; }
     }
     
-    /* 🔥 Hide cursor completely after animation */
+    
     .header-text h1.typing-complete {
         border-right: none;
     }
@@ -655,15 +646,14 @@ nav .fas{
         50% { transform: translate(-50%, -10px); }
     }
     form {
-        margin-bottom: 40px; /* Push content below */
+        margin-bottom: 40px; 
     }
     
-    /* Optional: Give space between button and heading */
     form .btn2 {
         margin-bottom: 20px;
     }
     
-    /* Ensure Contact Heading has top margin */
+
     .contact-text {
         margin-top: 20px;
         padding: 0 10px;
@@ -717,16 +707,15 @@ h1, h2, .sub-title, .sub-title2 {
 
 
 /* ===================== */
-/* CSS BY GPT*/
 :root {
-    --primary-color: #84a379;            /* accent green */
-    --secondary-color: #f5f5dc;          /* soft beige */
-    --text-light: #ffffff;               /* white text */
-    --text-dark: #1a1a1a;                /* dark text */
-    --bg-dark: #080808;                  /* dark background */
-    --card-bg: rgba(255, 255, 255, 0.05);/* card style background */
+    --primary-color: #84a379;            
+    --secondary-color: #f5f5dc;          
+    --text-light: #ffffff;               
+    --text-dark: #1a1a1a;                
+    --bg-dark: #080808;                  
+    --card-bg: rgba(255, 255, 255, 0.05);
     --accent-glow: rgba(255, 255, 255, 0.15);
-    --hover-color: #a7c7a3;              /* hover effect */
+    --hover-color: #a7c7a3;              
 }
 
 body {
@@ -828,13 +817,12 @@ form input::placeholder, form textarea::placeholder {
     letter-spacing: 1px;
 }
 
-/* Smooth AOS Fade-in Enhancements */
 [data-aos] {
     transition-property: transform, opacity;
     transition-duration: 1s;
 }
 
-/* Nav Menu Redesign (Mobile) */
+/* Nav Menu (Mobile) */
 @media only screen and (max-width: 600px) {
     #nav-menu {
         position: fixed;
@@ -896,8 +884,8 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 nav {
-    background-color: rgba(245, 245, 220, 0.95); /* slightly transparent beige */
-    backdrop-filter: blur(6px); /* smoothens content underneath */
+    background-color: rgba(245, 245, 220, 0.95); 
+    backdrop-filter: blur(6px); 
 }
 
 
